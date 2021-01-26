@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.ayetstudios.androidsdk.MainActivity"
+        android:gravity="center_horizontal"
+        >
+
+        <!--<Button
+            android:id="@+id/button_id_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test button 1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            />-->
+
+        <!--<Button
+            android:id="@+id/button_id_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test button 2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button_id_1"
+            android:layout_marginBottom="5dp"
+            />-->
+
+        <!--<WebView
+            android:id="@+id/webview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </WebView>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account balance:"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp"
+            />
+        <TextView
+            android:id="@+id/textview_account_balance"
+            android:background="@android:color/background_light"
+            android:layout_width="128dp"
+            android:layout_height="34dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_show_offerwall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Show Offerwall"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_deduct_balance_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Deduct Balance 5"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_process_retention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Process Retention"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_prepare_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Video Ad"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_track_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Track Event"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_prepare_video_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="[Portrait] Video Ad"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_start_video_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="[Async] Video Ad"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_rewarded_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Rewarded Video Ad"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_rewarded_video_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="[Wifi] Rew. Video Ad"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_rewarded_video_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="[Portrait] Rew. Video Ad"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_rewarded_video_async"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="[Async] Rew. Video Ad"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_webview_offerwall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Web Offerwall"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_request_native"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Request Native Offers"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_activate_native_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Activate Native #1"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button_activate_native_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:maxWidth="40dp"
+                android:text="Activate Native #2"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
