@@ -32,7 +32,7 @@ package="com.ayetstudios.ayetandroidsdkdemoapp">
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="offer" android:host="com.ayetstudios.ayetdemoapp" /> <!-- Replace with your package name -->
+            <data android:scheme="offer" android:host="com.ayetstudios.ayetandroidsdkdemoapp" /> <!-- Replace with your package name -->
         </intent-filter>
     </activity>
     <activity android:name="com.ayetstudios.publishersdk.VideoActivity" android:configChanges="orientation|screenSize" />
