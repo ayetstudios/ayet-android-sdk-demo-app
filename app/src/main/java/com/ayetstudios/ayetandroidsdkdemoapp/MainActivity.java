@@ -142,65 +142,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.button_request_native).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AyetSdk.getNativeOffers(MainActivity.this.getApplication(), "android_native_offers", new NativeOffersCallback() {
-                    @Override
-                    public void onResult(boolean success, NativeOfferList responseMessage) {
-
-                        Toast.makeText(MainActivity.this , "SUCCESS : "+responseMessage.offers.size()+"!!!" , Toast.LENGTH_LONG).show();
-                        Log.e("JSON Native Offers",  new Gson().toJson( responseMessage.offers ) );
-                        ((TextView)MainActivity.this.findViewById(R.id.textView)).setText(new Gson().toJson( responseMessage.offers ));
-                        nativeOfferCache=responseMessage.offers;
-
-                    }
-                });
-            }
-        });
-
-        findViewById(R.id.button_activate_native_1).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (MainActivity.this.nativeOfferCache==null || MainActivity.this.nativeOfferCache.size()<1)
-                    Toast.makeText(MainActivity.this , "Native Offer #1 not available!" , Toast.LENGTH_LONG).show();
-                else {
-                    AyetSdk.activateOffer(MainActivity.this, nativeOfferCache.get(0).getId(), new ActivateOfferCallback() {
-                        @Override
-                        public void onFailed() {
-                            Toast.makeText(MainActivity.this , "Native Offer #1 - onFailed" , Toast.LENGTH_LONG).show();
-                        }
-
-                        @Override
-                        public void onSuccess() {
-                            Toast.makeText(MainActivity.this , "Native Offer #1 - onSuccess" , Toast.LENGTH_LONG).show();
-                        }
-                    });
-                }
-            }
-        });
 
 
-        findViewById(R.id.button_activate_native_2).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (MainActivity.this.nativeOfferCache==null || MainActivity.this.nativeOfferCache.size()<2)
-                    Toast.makeText(MainActivity.this , "Native Offer #2 not available!" , Toast.LENGTH_LONG).show();
-                else {
-                    AyetSdk.activateOffer(MainActivity.this, nativeOfferCache.get(1).getId(), new ActivateOfferCallback() {
-                        @Override
-                        public void onFailed() {
-                            Toast.makeText(MainActivity.this , "Native Offer #2 - onFailed" , Toast.LENGTH_LONG).show();
-                        }
 
-                        @Override
-                        public void onSuccess() {
-                            Toast.makeText(MainActivity.this , "Native Offer #2 - onSuccess" , Toast.LENGTH_LONG).show();
-                        }
-                    });
-                }
-            }
-        });
+
+
+
     }
 
     @Override
